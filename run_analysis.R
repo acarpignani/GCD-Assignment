@@ -1,6 +1,6 @@
 # Load plyr package
-install.packages("magrittr")
-install.packages("plyr")
+#install.packages("magrittr")
+#install.packages("plyr")
 library(magrittr)
 library(plyr)
 
