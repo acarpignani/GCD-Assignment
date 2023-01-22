@@ -62,7 +62,7 @@ names(TidyData)<-gsub("gravity", "Gravity", names(TidyData))
 FinalData <- TidyData %>%
     dplyr::group_by(subject, activity) %>%
     dplyr::summarise_all(dplyr::funs(mean))
-write.csv(FinalData, "FinalData.csv")
+write.table(FinalData, "FinalData.txt", row.name=FALSE)
 
 
 # Checking variable names and final control of the tidy dataset
